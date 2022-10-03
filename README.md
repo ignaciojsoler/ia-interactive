@@ -26,7 +26,5 @@ Destkop:
 ![ignaciojsoler github io_ia-interactive_](https://user-images.githubusercontent.com/70725223/193483045-3be28c91-2e60-4a5d-a640-af3aa87f0dd8.png)
 
 Mobile:
-<p align="center">
-  ![ignaciojsoler github io_ia-interactive_(iPhone X)](https://user-images.githubusercontent.com/70725223/193483054-40b2b750-d2fb-448c-af12-bc24976c363a.png)
-</p>
+<p align="center">![ignaciojsoler github io_ia-interactive_(iPhone X)](https://user-images.githubusercontent.com/70725223/193483054-40b2b750-d2fb-448c-af12-bc24976c363a.png)</p>
 
