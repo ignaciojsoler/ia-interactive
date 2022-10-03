@@ -1,0 +1,114 @@
+@import "../base/breakpoints";
+
+.strawberries {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 20;
+
+  .strawberry2 {
+    display: none;
+  }
+
+  .strawberry3 {
+    height: 15.188rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  .strawberry4 {
+    display: none;
+  }
+
+  .strawberry5 {
+    height: 11.625rem;
+    rotate: -35deg;
+    position: absolute;
+    top: 6rem;
+    left: -6.5rem;
+  }
+
+  .strawberry6 {
+    height: 8.25rem;
+    position: absolute;
+    top: 53rem;
+    right: -0.5rem;
+  }
+
+  .strawberry7 {
+    display: none;
+  }
+
+  .strawberry8 {
+    display: none;
+  }
+
+  .strawberry9 {
+    display: none;
+  }
+
+  @include media-up(md) {
+    .strawberry2 {
+      display: block;
+      height: 15.188rem;
+      position: absolute;
+      top: -3rem;
+      right: 5rem;
+    }
+
+    .strawberry3 {
+      height: 15.188rem;
+      top: 30rem;
+      right: -3rem;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+    }
+
+    .strawberry4 {
+      display: block;
+      height: 25.188rem;
+      position: absolute;
+      top: 32rem;
+      left: 0;
+    }
+
+    .strawberry5 {
+      top: 66rem;
+      left: 1rem;
+      rotate: 0deg;
+    }
+
+    .strawberry6 {
+      top: 63rem;
+    }
+
+    .strawberry7 {
+      display: block;
+      height: 11.625rem;
+      position: absolute;
+      top: 90rem;
+    }
+
+    .strawberry8 {
+      display: block;
+      height: 11.625rem;
+      position: absolute;
+      top: 90rem;
+      right: 0;
+    }
+
+    .strawberry9 {
+      display: block;
+      height: 11.625rem;
+      position: absolute;
+      top: 87rem;
+      left: 12rem;
+    }
+  }
+}

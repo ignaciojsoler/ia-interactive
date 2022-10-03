@@ -1,0 +1,57 @@
+@import '../abstracts/mixins';
+@import "../base/breakpoints";
+
+footer {
+    padding: 1.8rem 0;
+    margin: auto;
+    max-width: 410px;
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 1rem;
+
+        h6 {
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        h5 {
+            @include text-sm;
+            font-weight: 500;
+            padding: 0 1rem;
+        }
+    }
+
+    @include media-up(md) {
+        max-width: 1280px;
+
+        .logos {
+            position: absolute;
+            width: 100%;
+            max-width: 1280px;
+        }
+
+        .text {
+            text-align: start;
+            position: relative;
+            display: inline-block;
+            margin-left: 5rem;
+            top: -.5rem;
+            > * + * {
+                margin-top: .3rem;
+            }
+
+            h5 {
+                padding: 0;
+                font-size: 11px;
+            }
+        }
+    }
+}

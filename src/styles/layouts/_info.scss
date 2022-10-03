@@ -1,0 +1,96 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import "../base/breakpoints";
+
+.info {
+    position: relative;
+    padding: 3rem 0 1.4rem 0;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        background-color: $light;
+        top: -13vh;
+        height: 10rem;
+        width: 100%;
+        transform: skew(0deg, 4deg);
+        z-index: 10;
+    }
+
+    h3 {
+        @include text-xl;
+        font-weight: 300;
+        padding: 0.6rem 1rem;
+        color: $primary;
+        position: relative;
+        z-index: 30;
+    }
+
+    .info__content {
+        position: relative;
+        z-index: 20;
+        padding: 0 1rem;
+        
+        > * + * {
+            padding: 0.6rem 0;
+        }
+
+        
+
+        h5 {
+            @include text-xs;
+            padding: 0.6rem 0;
+        }
+
+        p {
+            @include text-xs;
+        }
+    }
+
+    @include media-up(md) {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 1.125rem;
+
+        &::before {
+            top: -10vh;
+            text-align: center;
+            width: 100vw;
+            justify-self: center;
+            align-self: center
+            
+        }
+
+        h3 {
+            @include text-4xl;
+            letter-spacing: .3rem;
+        }
+
+        .info__content {
+            display: flex;
+            margin-top: 2rem;
+            
+
+            .info__text {
+                width: 80%;
+                padding-right: 3.3rem;
+                > * {
+                    margin-bottom: 2rem;
+                }
+
+                h5 {
+                    @include text-sm
+                }
+        
+                p {
+                    @include text-sm;
+                }
+            }
+            
+        }
+        
+    }
+}

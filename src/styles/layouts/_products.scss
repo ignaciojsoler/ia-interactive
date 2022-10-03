@@ -1,0 +1,101 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import "../base/breakpoints";
+
+.products {
+    background: $secondary-light;
+    padding: 2.5rem 0;
+    text-align: center;
+
+    h3 {
+        text-align: center;
+        font-weight: 300;
+        color: $primary;
+        }
+
+    .products__items {
+        position: relative;
+        z-index: 30;
+        display: inline-flex;
+        align-items: baseline;
+        margin: 3rem auto 0 auto;
+        padding: 0 1rem;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        max-width: 100%;
+
+        .products__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            @include text-md;
+            margin: 0 .2rem;
+
+            .product__img-1 {
+                object-fit:contain;
+                height: 6.625rem;
+            }
+
+            .product__img-2 {
+                object-fit:contain;
+                height: 8.375rem;
+            }
+
+            .product__img-3 {
+                object-fit:contain;
+                height: 12.938rem;
+            }
+
+            h6 {
+                text-align: center;
+                color: $primary;
+                font-weight: 300;
+            }
+        }
+    }
+
+    @include media-up(md) {
+
+        h3 {
+            @include text-4xl
+        }
+
+        .products__items {
+            overflow: visible;
+            .products__item {
+                margin: 0 3rem;
+                @include text-3xl;
+                cursor: pointer;
+
+                img {
+                    transition: transform .3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .product__img-1 {
+                    height: 6.625rem * 2;
+                }
+    
+                .product__img-2 {
+                    height: 8.375rem * 2;
+                }
+    
+                .product__img-3 {
+                    height: 12.938rem * 2;
+                }
+
+                h6 {
+                    transition: color .3s;
+                    &:hover {
+                        color: rgba($color: $primary, $alpha: .6);
+                    }
+                }
+            }
+        }
+    }
+}
