@@ -3,7 +3,7 @@
 
 ## Prueba práctica Front end Developer
 
-### Desarrollado por Ignacio Soler
+Desarrollado por Ignacio Soler. Tiempo de desarrollo: entre 11 y 12 horas.
 
 #### Requerimientos:
 - Utilizar React como framework de javascript.
